@@ -1,0 +1,211 @@
+# ============================================
+# GHOSTTY TERMINAL CONFIGURATION FOR DEVELOPERS
+# ============================================
+# Ultra-minimal working configuration
+
+# ============================================
+# FONT CONFIGURATION
+# ============================================
+
+# Primary font
+# font-family = "Fira Code"
+font-family = "Cascadia Code"
+#font-family = "SF Mono"
+font-size = 19
+
+# Font features
+font-feature = +calt,+liga,+dlig,+ss01,+ss02,+ss03,+ss04,+ss05,+ss06,+ss07,+ss08
+
+font-thicken = true
+adjust-cell-height = 1
+
+# ============================================
+# THEME AND COLORS
+# ============================================
+
+# Use a built-in theme that exists
+#theme = "Toy Chest"
+#theme = "TokyoNight Day"
+theme = "Vercel"
+ #theme = "Vimbones"
+
+# Cursor settings with enhanced animations
+minimum-contrast = 4.5
+cursor-style = bar
+cursor-style-blink = true
+cursor-color = "#f2d5cf"
+
+# Enhanced cursor visibility
+
+# ============================================
+# SHADER CONFIGURATION
+# ============================================
+
+# Enable cursor blaze shader for typing animations
+custom-shader = ~/.config/ghostty/shaders/cursor_blaze.glsl
+
+# Selection
+selection-invert-fg-bg = true
+
+# ============================================
+# WINDOW APPEARANCE
+# ============================================
+
+# Transparency
+background-opacity = 0.95
+background-blur = 15
+
+# Window padding
+window-padding-x = 12
+window-padding-y = 8
+window-padding-balance = true
+
+# Window sizing
+window-height = 35
+window-width = 120
+
+# macOS settings
+macos-titlebar-style = transparent
+macos-option-as-alt = true
+macos-window-shadow = true
+macos-non-native-fullscreen = visible-menu
+
+# ============================================
+# PERFORMANCE
+# ============================================
+
+# Scrollback - increased for development
+scrollback-limit = 500000
+
+# Rendering
+window-vsync = true
+
+# ============================================
+# SHELL INTEGRATION
+# ============================================
+
+# Shell integration - enhanced for development
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# ============================================
+# BEHAVIOR
+# ============================================
+
+# Mouse
+mouse-hide-while-typing = true
+focus-follows-mouse = false
+
+# Clipboard - developer-friendly settings
+copy-on-select = clipboard
+clipboard-trim-trailing-spaces = true
+clipboard-paste-protection = true
+clipboard-read = allow
+
+# Splits
+unfocused-split-opacity = 0.8
+split-divider-color = "#626880"
+
+# ============================================
+# DEVELOPER-FRIENDLY KEYBOARD SHORTCUTS
+# ============================================
+
+# === WINDOW & TAB MANAGEMENT ===
+keybind = cmd+n=new_window
+keybind = cmd+t=new_tab
+keybind = cmd+w=close_surface
+keybind = cmd+shift+w=close_window
+
+# Tab navigation (like browser)
+keybind = cmd+1=goto_tab:1
+keybind = cmd+2=goto_tab:2
+keybind = cmd+3=goto_tab:3
+keybind = cmd+4=goto_tab:4
+keybind = cmd+5=goto_tab:5
+keybind = cmd+6=goto_tab:6
+keybind = cmd+7=goto_tab:7
+keybind = cmd+8=goto_tab:8
+keybind = cmd+9=goto_tab:9
+keybind = cmd+shift+left=previous_tab
+keybind = cmd+shift+right=next_tab
+
+# === SPLIT MANAGEMENT ===
+# Create splits
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
+keybind = cmd+backslash=new_split:right
+keybind = cmd+shift+backslash=new_split:down
+
+# Navigate splits (Vim-style)
+keybind = cmd+h=goto_split:left
+keybind = cmd+j=goto_split:down
+keybind = cmd+k=goto_split:up
+keybind = cmd+l=goto_split:right
+
+# Resize splits
+keybind = cmd+shift+h=resize_split:left,10
+keybind = cmd+shift+j=resize_split:down,10
+keybind = cmd+shift+k=resize_split:up,10
+keybind = cmd+shift+l=resize_split:right,10
+
+# Toggle split zoom
+keybind = cmd+shift+enter=toggle_split_zoom
+
+# === CLIPBOARD & TEXT MANIPULATION ===
+keybind = cmd+c=copy_to_clipboard
+keybind = cmd+v=paste_from_clipboard
+keybind = cmd+shift+v=paste_from_selection
+
+# === SEARCH & NAVIGATION ===
+# Search and navigation
+keybind = cmd+home=scroll_to_top
+keybind = cmd+end=scroll_to_bottom
+
+# Scrollback navigation
+keybind = cmd+up=scroll_page_up
+keybind = cmd+down=scroll_page_down
+keybind = page_up=scroll_page_up
+keybind = page_down=scroll_page_down
+
+# === FONT & DISPLAY ===
+keybind = cmd+plus=increase_font_size:1
+keybind = cmd+minus=decrease_font_size:1
+keybind = cmd+0=reset_font_size
+keybind = cmd+shift+plus=increase_font_size:5
+keybind = cmd+shift+minus=decrease_font_size:5
+
+# === DEVELOPER SHORTCUTS ===
+# Inspector toggle
+keybind = cmd+alt+i=inspector:toggle
+
+# Toggle fullscreen
+keybind = cmd+enter=toggle_fullscreen
+
+# ============================================
+# ADVANCED SETTINGS
+# ============================================
+
+# Auto-update
+auto-update = download
+auto-update-channel = stable
+
+# Terminal title - dynamic based on current directory
+title = "Ghostty Terminal"
+adjust-cursor-thickness = 1
+
+# Working directory management
+working-directory = inherit
+
+# Link handling for developers
+link-url = true
+
+# Confirmations - reduced for faster workflow
+confirm-close-surface = false
+quit-after-last-window-closed = false
+
+# ============================================
+# DEVELOPER PRODUCTIVITY FEATURES
+# ============================================
+
+# Focus behavior optimized for development
+focus-follows-mouse = false

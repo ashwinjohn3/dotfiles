@@ -1,0 +1,82 @@
+# Clean symmetric prompt with consistent spacing
+# Optimized for visual balance across all terminals
+
+add_newline = true
+continuation_prompt = "[▸](dimmed white) "
+
+# Left side: minimal user info + prompt character
+format = """
+$username\
+$hostname\
+$character"""
+
+# Right side: context info (directory, git, timing)
+right_format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$time"""
+
+# ===== LEFT SIDE MODULES =====
+
+[username]
+style_user = "bright-yellow bold"
+style_root = "purple bold"
+format = "[$user]($style) "
+show_always = true
+
+[hostname]
+ssh_only = true
+format = "[@$hostname](bold blue) "
+disabled = false
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
+
+# ===== RIGHT SIDE MODULES =====
+
+[directory]
+style = "blue"
+format = "[$path]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " 🔒"
+read_only_style = "red"
+
+[git_branch]
+format = " [$symbol$branch]($style)"
+style = "bright-black"
+symbol = ""
+
+[git_status]
+format = "([\\[$all_status$ahead_behind\\]]($style))"
+style = "cyan"
+conflicted = "="
+untracked = "?"
+modified = "!"
+staged = "+"
+renamed = "»"
+deleted = "✘"
+stashed = "$"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+
+[git_state]
+format = ' [\($state( $progress_current/$progress_total)\)]($style)'
+style = "bright-black"
+
+[cmd_duration]
+format = " [$duration]($style)"
+style = "yellow"
+min_time = 500
+
+[time]
+disabled = false
+format = " [$time]($style)"
+time_format = "%H:%M"
+style = "dimmed white"
