@@ -1,23 +1,23 @@
-# ( My Terminal Dotfiles
+# âœ¨ My Terminal Dotfiles
 
-> Because life's too short for ugly terminals <¨
+> Because life's too short for ugly terminals ğŸ¨
 
-A collection of my personal terminal configurations. Stolen from the internet, modified for my workflow, and now shared back with you. The circle of life! >
+A collection of my personal terminal configurations.ğŸ‘¾
 
-## =à What's Inside
+## ğŸ› ï¸ What's Inside
 
 This repo contains configs for:
 
-- **[Ghostty](https://github.com/ghostty-org/ghostty)** ={ - GPU-accelerated terminal with sick shader effects
-- **[Wezterm](https://wezfurlong.org/wezterm/)** =¥ - Cross-platform terminal goodness
-- **[Starship](https://starship.rs/)** =€ - The blazing-fast prompt that makes you look productive
-- **Zsh** = - Shell integration magic
+- **[Ghostty](https://github.com/ghostty-org/ghostty)** ğŸ‘» - GPU-accelerated terminal with sick shader effects
+- **[Wezterm](https://wezfurlong.org/wezterm/)** ğŸ–¥ï¸ - Cross-platform terminal goodness
+- **[Starship](https://starship.rs/)** ğŸš€ - The blazing-fast prompt that makes you look productive
+- **Zsh** ğŸš - Shell integration magic
 
-## <¯ Quick Start
+## ğŸ¯ Quick Start
 
 ```bash
 # Clone it
-git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/dotfiles
+git clone https://github.com/ashwinjohn3/dotfiles.git ~/dotfiles
 
 # Symlink what you need
 ln -sf ~/dotfiles/ghostty ~/.config/ghostty
@@ -28,16 +28,16 @@ ln -sf ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 cat ~/dotfiles/zshrc/.zshrc >> ~/.zshrc
 ```
 
-## ¡ Features
+## âš¡ Features
 
-- <¨ **Visual Effects** - Custom GLSL shaders for Ghostty (fireworks, galaxy, cursor trails!)
-- >Ÿ **Glass Mode** - Modern transparency and blur effects
-- ( **Arrow Key Navigation** - Intuitive split navigation with arrow keys
-- <¯ **Synced Keybindings** - Same shortcuts across Ghostty and Wezterm
-- < **Clean Prompt** - Minimal Starship config that stays out of your way
-- =Ê **Git Integration** - Know your repo status at a glance
+- ğŸ¨ **Visual Effects** - Custom GLSL shaders for Ghostty (fireworks, galaxy, cursor trails!)
+- ğŸªŸ **Glass Mode** - Modern transparency and blur effects
+- â¬…ï¸ **Arrow Key Navigation** - Intuitive split navigation with arrow keys
+- ğŸ¯ **Synced Keybindings** - Same shortcuts across Ghostty and Wezterm
+- ğŸŒˆ **Clean Prompt** - Minimal Starship config that stays out of your way
+- ğŸ“Š **Git Integration** - Know your repo status at a glance
 
-## <® Keybindings Preview
+## ğŸ® Keybindings Preview
 
 Both Ghostty and Wezterm share the same shortcuts:
 - `Cmd+D` for splits (right) / `Cmd+Shift+D` (down)
@@ -45,28 +45,24 @@ Both Ghostty and Wezterm share the same shortcuts:
 - `Cmd+1-9` to jump between tabs
 - `Cmd+Alt+Arrow Keys` to resize splits
 
-Full list inside the configs =İ
+Full list inside the configs ğŸ“
 
-## < Credits
+## ğŸŒŸ Credits
 
 Shoutout to the awesome folks whose code I've borrowed:
 - [chardskarth](https://gist.github.com/chardskarth/95874c54e29da6b5a36ab7b50ae2d088) - Cursor blaze shader
 - [The Art of Code](https://www.shadertoy.com/view/lscGRl) - Fireworks shader
 - [Crackerfracks](https://github.com/Crackerfracks/Synesthaxia.glsl) - Synesthaxia shader
-- Everyone whose dotfiles I've stalked on GitHub =@
+- Everyone whose dotfiles I've stalked on GitHub ğŸ‘€
 
-## =Ü License
-
-MIT - Copy it, break it, fix it, trash it. Whatever you want! <‰
-
-## =¬ Contributing
+## ğŸ’¬ Contributing
 
 Found something cool? Spotted a bug? PRs and issues welcome!
 
-Or just fork it and make it yours. That's what I did! =€
+Or just fork it and make it yours. ğŸš€
+
+**Got your own dotfiles?** Share them! I'd love to see what you've built and learn from your setup too! ğŸ’¡
 
 ---
 
-**Remember**: The best dotfiles are the ones you copy from someone else and pretend you made yourself. =	
-
-Happy hacking! =»(
+Happy hacking! ğŸ’»âœ¨

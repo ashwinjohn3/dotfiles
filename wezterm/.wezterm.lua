@@ -98,17 +98,17 @@ config.keys = {
   { key = 'd', mods = 'CMD', action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
   { key = 'd', mods = 'CMD|SHIFT', action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' } },
 
-  -- Navigate splits (Vim-style)
-  { key = 'h', mods = 'CMD', action = wezterm.action.ActivatePaneDirection 'Left' },
-  { key = 'j', mods = 'CMD', action = wezterm.action.ActivatePaneDirection 'Down' },
-  { key = 'k', mods = 'CMD', action = wezterm.action.ActivatePaneDirection 'Up' },
-  { key = 'l', mods = 'CMD', action = wezterm.action.ActivatePaneDirection 'Right' },
+  -- Navigate splits (Arrow keys)
+  { key = 'LeftArrow', mods = 'CMD', action = wezterm.action.ActivatePaneDirection 'Left' },
+  { key = 'DownArrow', mods = 'CMD', action = wezterm.action.ActivatePaneDirection 'Down' },
+  { key = 'UpArrow', mods = 'CMD', action = wezterm.action.ActivatePaneDirection 'Up' },
+  { key = 'RightArrow', mods = 'CMD', action = wezterm.action.ActivatePaneDirection 'Right' },
 
   -- Resize splits
-  { key = 'h', mods = 'CMD|SHIFT', action = wezterm.action.AdjustPaneSize { 'Left', 5 } },
-  { key = 'j', mods = 'CMD|SHIFT', action = wezterm.action.AdjustPaneSize { 'Down', 5 } },
-  { key = 'k', mods = 'CMD|SHIFT', action = wezterm.action.AdjustPaneSize { 'Up', 5 } },
-  { key = 'l', mods = 'CMD|SHIFT', action = wezterm.action.AdjustPaneSize { 'Right', 5 } },
+  { key = 'LeftArrow', mods = 'CMD|ALT', action = wezterm.action.AdjustPaneSize { 'Left', 5 } },
+  { key = 'DownArrow', mods = 'CMD|ALT', action = wezterm.action.AdjustPaneSize { 'Down', 5 } },
+  { key = 'UpArrow', mods = 'CMD|ALT', action = wezterm.action.AdjustPaneSize { 'Up', 5 } },
+  { key = 'RightArrow', mods = 'CMD|ALT', action = wezterm.action.AdjustPaneSize { 'Right', 5 } },
 
   -- Toggle split zoom
   { key = 'Enter', mods = 'CMD|SHIFT', action = wezterm.action.TogglePaneZoomState },
@@ -121,8 +121,6 @@ config.keys = {
   { key = 'f', mods = 'CMD', action = wezterm.action.Search 'CurrentSelectionOrEmptyString' },
   { key = 'Home', mods = 'CMD', action = wezterm.action.ScrollToTop },
   { key = 'End', mods = 'CMD', action = wezterm.action.ScrollToBottom },
-  { key = 'UpArrow', mods = 'CMD', action = wezterm.action.ScrollByPage(-1) },
-  { key = 'DownArrow', mods = 'CMD', action = wezterm.action.ScrollByPage(1) },
   { key = 'PageUp', mods = 'NONE', action = wezterm.action.ScrollByPage(-1) },
   { key = 'PageDown', mods = 'NONE', action = wezterm.action.ScrollByPage(1) },
 
