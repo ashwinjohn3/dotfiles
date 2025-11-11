@@ -34,7 +34,7 @@ disabled = false
 
 [character]
 success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
+error_symbol = "[❯](bright-red)"
 vimcmd_symbol = "[❮](green)"
 
 # ===== RIGHT SIDE MODULES =====
