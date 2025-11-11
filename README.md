@@ -48,7 +48,7 @@ Both Ghostty and Wezterm share the same shortcuts:
 Full list inside the configs 📝
 
 ## Testing
-random open api key: sk-proj-abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890
+random open api key: sk-proj-abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567899
 
 ## 🌟 Credits
 
